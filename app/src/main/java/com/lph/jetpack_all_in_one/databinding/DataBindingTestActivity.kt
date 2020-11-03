@@ -2,6 +2,7 @@ package com.lph.jetpack_all_in_one.databinding
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import com.lph.jetpack_all_in_one.R
 import com.lph.jetpack_all_in_one.databinding.model.entity.Chapter
@@ -20,6 +21,12 @@ class DataBindingTestActivity : AppCompatActivity() {
         chapter.age=19
 
         dataBinding.test =chapter
+        dataBinding.activity = this
 
+    }
+    
+    
+    fun onMyButtonClick(){
+        Toast.makeText(this, "233", Toast.LENGTH_SHORT).show()
     }
 }

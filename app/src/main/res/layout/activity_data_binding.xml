@@ -7,6 +7,9 @@
         <variable
             name="test"
             type="com.lph.jetpack_all_in_one.databinding.model.entity.Chapter" />
+        <variable
+            name="activity"
+            type="com.lph.jetpack_all_in_one.databinding.DataBindingTestActivity" />
     </data>
 
     <LinearLayout
@@ -31,6 +34,11 @@
      <TextView
             android:text='@{test.age &lt;=18?"我还没成年":" 我成年了"}'
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:text="调用方法"
+            android:onClick="@{()->activity.onMyButtonClick()}"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
     </LinearLayout>

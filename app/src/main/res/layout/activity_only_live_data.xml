@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".activity.livedata.OnlyLiveDataActivity">
+
+
+    <TextView
+        android:id="@+id/tv_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btn_add"
+        android:text="add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <fragment
+        android:layout_marginTop="100dp"
+        android:id="@+id/first_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:name="com.lph.jetpack_all_in_one.activity.livedata.data.BlankFragment"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="295dp" />
+
+</LinearLayout>

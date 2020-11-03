@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">jetpack_all_in_one</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
